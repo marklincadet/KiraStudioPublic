@@ -1,0 +1,2 @@
+[SearchableFiles.include]
+Localization/*.ini
