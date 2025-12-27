@@ -18,19 +18,32 @@ If you are working on a trackpad, please check out how to enable [Trackpad contr
 
 ## Basic Mobile Controls
 
-On mobile, there are 3 main gestures used:
+On mobile, there are 4 main gestures used:
 
 * A **Quick Tap** will usually add stuff such as pattern, notes or vertices on a curve. 
 * A **Swipe** will pan the viewport around.
-* A **Long Press** on something will reveal advanced options or start a rectangular selection. In some cases where multiple actions can be performed (selection and contextual menu), a pulsing circle will appears to give you a choice.
+* A **Pinch** will zoom the viewport in/out.
+* A **Long Press** on something will reveal advanced options or start a rectangular selection. In some cases where multiple actions are available (ex: selection + contextual menu), a pulsing circle will appears to give you a choice.
 
 # Main Window
 
-- Active channel (explain that this is what piano plays)
-- Main Window
-	- Links to various sections.
+The main window is composed of a few main controls:
+
+* The **Toolbar** contains shortcuts to various common functions such as undo/redo, copy/paste, etc. 
+
+* The **[Sequencer](sequencer.md)** (or Pattern Editor) is where you add or remove channels & tracks. It is also where organize your patterns, which are reusable little snippets of music that form the high-level structure of your songs. On mobile, this is your home base and where you always return to when you close every views. 
+
+* Below the Sequencer are various views such as the **[Piano Roll](pianoroll.md)**, **[Automation Tracks Editor](autotrack.md)**, various **[Curve Editor](envelopes.md)**, etc. On phones, these views are full-screen and are opened and closed as needed. 
+
+* The right side pannel is the **[Project Explorer](instruments.md)**. This panel allows navigating through the various objects in your projects (songs, instruments, effects, etc). It also allows editing and automating the parameters of these objects. On mobile, this panel retracts and can be opened by either pressing the **Project** button in the toolbar, or by double-tapping a channel in the Sequencer. 
+
+* The **Pop-up Piano** is at the very bottom. This piano allows previewing the instrument associated with the **Active Channel**, which is the highlighted channel in the Sequencer. This piano can be toggled using the **Piano** button in the toolbar.
+
+> TODO : Tablet screenshot + crop titlebar + write name of things on images.
 
 === "Desktop"
-    ![](images/MainWindowDesktop.png)
-=== "Mobile"
-    ![](images/MainWindowMobile.png)
+    ![](images/MainWindowDesktop.png#fixed-height)
+=== "Phone"
+    ![](images/MainWindowMobile.png#fixed-height)
+=== "Tablet"
+    ![](images/MainWindowMobile.png#fixed-height)

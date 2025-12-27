@@ -26,4 +26,4 @@ plugins:
   - meta-descriptions
 markdown_extensions:
   - pymdownx.tabbed
-      
+

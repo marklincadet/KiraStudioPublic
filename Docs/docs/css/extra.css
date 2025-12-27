@@ -35,23 +35,10 @@ img[src*="#center"] {
     display: block;
     margin: 0 auto;
 }
-img[src*="#center-desktop"] {
+img[src*="#fixed-height"] {
+    height: 400px;
     display: block;
     margin: 0 auto;
-}
-img[src*="#center-mobile"] {
-    display: none;
-    margin: 0 auto;
-}
-@media (max-width: 768px) {
-img[src*="#center-desktop"] {
-    display: none;
-    margin: 0 auto;
-}
-img[src*="#center-mobile"] {
-    display: block;
-    margin: 0 auto;
-}
 }
 img[src*="#grey"] {
     filter: brightness(70%)
@@ -67,8 +54,14 @@ th {
 .col-md-3 {
     max-width:30%;
 }
+.nav.flex-column .nav.flex-column > .nav-item > .nav-link 
+{
+    padding-left: 1.5em; 
+}
 blockquote {              
-  background-color: rgb(25,28,31);
+  #background-color: rgb(25,28,31);
+  background-color: #f0f;
+  color: black;
   font-style: italic;     
   padding: 12px 12px 1px 12px;
 }      

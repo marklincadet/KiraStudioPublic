@@ -8,6 +8,7 @@ Welcome to the KiraStudio documentation. Please use the __User Guide__ menu abov
 * [Basics](basics.md)
 * [Editing Channels, Tracks & Patterns](sequencer.md)
 * [Editing Notes in the Piano Roll](pianoroll.md)
+* [Editing Automation Tracks](autotrack.md)
 * [Editing Instruments, Effects & Automating Parameters](instruments.md)
 * [Editing ADSR Envelopes, Custom Curves & Sequences](envelopes.md)
 * [Editing Samples](samples.md)
