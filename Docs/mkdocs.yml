@@ -1,11 +1,19 @@
-site_name: FamiStudio Documentation
+site_name: KiraStudio Documentation
 nav:
 - Welcome: index.md   
 - User Guide:
   - "Installation": install.md
   - "Basics": basics.md
+  - "Editing Channels, Tracks & Patterns": sequencer.md
+  - "Editing Notes in the Piano Roll": pianoroll.md
+  - "Editing Automation Tracks": autotrack.md
+  - "Editing Instruments, Effects & Automating Parameters":  instruments.md
+  - "Editing ADSR Envelopes, Custom Curves & Sequences": envelopes.md
+  - "Editing Samples": samples.md
+  - "Editing WaveTables": wavetables.md
+  - "Generators Reference": generators.md
   - "Troubleshooting": troubleshooting.md
-  - "Acknowledgements": thanks.md
+  - "Acknowledgements & Licences": thanks.md
 - Change Log:
   - "All Version History": changelog.md
 extra_css:
@@ -16,3 +24,6 @@ theme:
 plugins:
   - search
   - meta-descriptions
+markdown_extensions:
+  - pymdownx.tabbed
+      

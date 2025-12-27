@@ -4,8 +4,20 @@ Welcome to the KiraStudio documentation. Please use the __User Guide__ menu abov
 
 # Table of Contents 
 
-* [Installation Procedure & Troubleshooting](install.md)
+* [Installation Procedure](install.md)
 * [Basics](basics.md)
-* [Acknowledgements](thanks.md)
+* [Editing Channels, Tracks & Patterns](sequencer.md)
+* [Editing Notes in the Piano Roll](pianoroll.md)
+* [Editing Instruments, Effects & Automating Parameters](instruments.md)
+* [Editing ADSR Envelopes, Custom Curves & Sequences](envelopes.md)
+* [Editing Samples](samples.md)
+* [Editing WaveTables](wavetables.md)
+* [Generator Reference](generators.md)
+* [Acknowledgements & Licenses](thanks.md)
 * [Troubleshooting](troubleshooting.md)
 * [Change Log](changelog.md)
+
+# TODO
+
+* Where do we talk about song/project/channel stuff? Time signature, etc.
+* Config
