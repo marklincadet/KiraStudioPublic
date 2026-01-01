@@ -42,12 +42,8 @@ The main window is composed of a few main controls:
 > TODO : Tablet screenshot + crop titlebar + write name of things on images.
 
 === "Desktop"
-    ![](images/MainWindowDesktop.png)
+    ![](images/MainWindowDesktop.png#center)
 === "Phone"
-    ![](images/MainWindowMobile.png)
+    ![](images/MainWindowMobile.png#center)
 === "Tablet"
-    ![](images/MainWindowMobile.png)
-
-Toto
-Titi
-Tata
+    ![](images/MainWindowMobile.png#center)

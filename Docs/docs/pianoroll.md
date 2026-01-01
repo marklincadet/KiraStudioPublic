@@ -2,10 +2,10 @@
 
 The **Piano Roll** is where you enter notes inside of patterns and likely where you will be spending most of your time in the app.
 
-The piano roll is makde of a few components:
+The piano roll is made of a few components:
 
 * On the left is the **Vertical Piano** which can be used to preview the instrument of the selected channel. Note that the selected channel may not necessarely be the one being edited.
-* On the top is the **Timeline** which display the beats in a `Bar.Beat` format.
+* On the top is the **Timeline** which display the beats in a `Bar.Beat` format and the pattern names/colors.
 * In the middle is the piano roll itself where notes are edited.
 * In the top-right corner is the **Floating Toolbar** which contains various snapping and view options.
 * At the bottom is the **Note Parameter Editor** where extra note parameters (velocity, pan, aftertouch, etc.) can be edited. This panel revealed by using the optionon the floating toolbar.
@@ -18,14 +18,14 @@ Unlike other apps like FL Studio, the piano roll does not only show you the note
 
 We will focus our attention to the center of the piano roll where all the notes lie.
 
-> TODO : Image here.
-
 ## Adding & deleting notes
 
 To add a new note, simply click on an empty space.
 
-* On desktop, you can click and drag to adjust the final position of the note.
-* On mobile, it just a tap.
+On desktop, you can choose between 2 editing modes in the floating toolbar. Both will create a note of the last duration used, they only differ on what happens when you move afterwards, while still holding the mouse button
+
+* **Click & Move** : Moving after the initial click will allow you to reposition the note.
+* **Click & Resize** : Moving after the initial click will allow you to change the duration of the note.
 
 On all platforms, deleting single notes is achieve by double-clicking. **Shift-Click** is also an alternate option on desktop.
 
@@ -33,10 +33,12 @@ On all platforms, deleting single notes is achieve by double-clicking. **Shift-C
 
 Selected notes have a white outline around them and can be modified as a group.
 
-* On desktop, you can select notes by right-clicking in the background and dragging to drag a rectangle. 
+* On desktop, you can select notes by right-clicking in the background and dragging to draw a rectangle. 
 * On mobile, you can long-press in the background and start drawing a rectangle once the pulsating circle appears. 
 
 You can also select a time range of notes by doing a selection from the timeline, which is the row with the bar/beat numbers at the top.
+
+> TODO : Animated GIF, desktop/mobile.
 
 ## Moving, transposing & resizing notes
 
@@ -49,7 +51,18 @@ To move notes simple click and drag. When starting a drag from a selected note, 
 
 When there us more than 1 note selected, the entire selection can be duplicated by dragging from the **Colored Paperstack Icon** and release it where you want to create the copy. On desktop, the same can also be accomplished by pressing and holding **Ctrl** while dragging notes.
 
-> TODO : A mobile/desktop GIF here would be nice.
+=== "Desktop"
+    ![](images/DuplicateNotesDesktop.gif#center)
+=== "Mobile"
+    ![](images/DuplicateNotesMobile.gif#center)
+
+## Copy & pasting notes
+
+An alternative way of duplicating notes is to use copy & paste. This provides more flexibility as it allows copy and pasting notes between tracks.
+
+1. Copy notes to the clipboard by making a selection and pressing **Ctrl+C**, or use the toolbar button.
+2. Position the playhead at the desired location 
+3. Paste the stored notes using **Ctrl+V**, or use the toolbar button on mobile.
 
 ## Snapping to beats
 
@@ -69,7 +82,7 @@ On mobile, all zooming is done with a pinch gesture.
 
 Slide notes are notes that start at a given pitch (the pitch of the note) and slowly change to hit a target pitch which is represented by where the triangle ends.
 
-> TODO : Image here.
+![](images/SlideNotes.png#center)
 
 To create a slide note, simple select one of the 3 slide note mode from the contextual menu that appears when right-clicking (long-pressing on mobile) on a note. Alternatively on desktop, holding the **S** key, clicking on a note and dragging up/down will start the creation of a slide note.
 
@@ -92,9 +105,7 @@ By default, notes have an attack which mean they will restart their envelopes fr
 
 The attack can be toggled for a particular note by selecting the **Toggle Note Attack** option from the contextual menu that appear when right-clicking (long-pressing on mobile). 
 
-Notes with no attack will show an ellipsis (...) before their value.
-
-> TODO : Image here.
+Notes with no attack will show an ellipsis (...) before their value. This can be seen in the image above where is note following a slide note has its attack disabled to create a single, long, gliding note.
 
 Disabling the attack in the piano roll does not garantee it will always work. In general, you should try to keep the note without attack in close proximity to the end of another note. Failure to do so may result in the attack still playing.
 
@@ -111,29 +122,31 @@ If there are multiple candidate notes, it will take the one with the closest mat
 
 To enable arpeggio chords, simply select the notes of a chord, right-click on any selected note (long-press on mobile) and select **Toggle Selection Arpeggio Chords** from the contextual menu. Visually, notes with arpeggio chords enabled will be drawn with a stripe pattern.
 
-> TODO : Image here.
+![](images/ArpeggioChord.png#center)
 
 The speed and order in which individual notes of an arpeggio is played is controlled in the channel settings, under the **Arpeggio** tab.
 
-> TODO : Image of the channel settings too? Where does that go?
+![](images/ArpeggioSettings.png#center)
+
+> TODO : Do we explain the settings here? Or in PE page?
 
 ## Release modes
 
-- Explain both release modes
+> TODO : Explain both modes, with images.
 
 ## Ghost notes
 
 **Ghost Notes** are a visual tool allowing you to see a semi-transparent version of the notes of another channel while editing another. This can be useful to align things to each other. 
 
-As of version 1.0, the feature is quite primitive. Ghost notes can be enabled for a single channel, or for all channels at once using the option from the floating toolbar.
+![](images/GhostNotes.png#center)
 
-> TODO : Image of the channel settings too? Where does that go?
+As of version 1.0, the feature is quite primitive. Ghost notes can be enabled for a single channel, or for all channels at once using the option from the floating toolbar.
 
 # Note Parameters 
 
 The note parameter editor can be opening using the option in the floating toolbar. This panel allows you to edit additional properties of notes, such as note velocity, stereo panning, etc.
 
-> TODO : Image here.
+![](images/NoteParamEditor.png#center)
 
 This editor only shows one parameter at a given time and you can chose which one by using the option in the floating toolbar.
 
@@ -165,5 +178,4 @@ When curve edit mode is active, a single-click on the curve will add a new verte
 
 Vertices can be moved by dragging and will respect any snapping setting.
 
-> TODO : Animated GIF here.
-
+![](images/NoteParamCurve.gif#center)

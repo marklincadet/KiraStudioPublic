@@ -32,7 +32,7 @@ There are 3 types of channel:
 
 On the left side of the sequencer are all the channel & tracks of the current song. 
 
-> TODO : Image, make sure "Bitcrushed Drums 1" is selection.
+![](images/TrackList.png#center)
 
 ## Selected channel
 
@@ -84,15 +84,19 @@ To reorder a track inside a channel, grab any track that is not the first one, a
 
 # Patterns & Bars
 
-At the center of the sequencer are all the patterns of the current song. Patterns can be as small as 1 bar, but can be much longer too. Patterns are re-usable little units of notes or automation tat you can re-use multiple times on a given track. 
+At the center of the sequencer are all the patterns of the current song. 
 
-> TODO : Image here.
+Patterns are re-usable little units of notes or automation that you can re-use multiple times on a given track. They can be as small as 1 bar, but can be much longer too. 
+
+![](images/PatternEditor.png#center)
 
 ## Difference with other DAWs
 
-Before we start, please note that patterns, sometimes called clips in other apps, are edited slightly differently from mainstream DAWs. In some DAWs (e.g. FL Studio Mobile), resizing a pattern makes it loop multiple times. In KiraStudio, resizing a pattern simply changes its duration, repetition is done using **Instancing** which creates a linked copy of a pattern. 
+Before we start, please note that patterns, sometimes called clips in other apps, are edited slightly differently from mainstream DAWs. 
 
-Another difference is that patterns, when opening in the piano roll or automation editor are shown with the rest of the song. In other DAWs, clips are editing individually, without seeing the outside context. In KiraStudio, the piano roll or automation editor are basically an extreme close up on a track.
+In some DAWs (e.g. FL Studio Mobile), resizing a pattern makes it loop multiple times. In KiraStudio, resizing a pattern simply changes its duration, repetition is done using **Instancing** which creates a linked copy of a pattern. 
+
+Another difference is that, when opening in the piano roll or automation editor, patterns are shown with the rest of the song. In other DAWs, clips are editing in a vacuum, without seeing the outside context. In KiraStudio, the piano roll or automation editor are basically an extreme close up on a track.
 
 Please do keep these differences in mind as you read the next few sections.
 
@@ -114,7 +118,10 @@ You can also select entire columns of patterns by doing a selection from the tim
 
 When selecting patterns this way, you will notice that the bar numbers also get a white outline around them. This is important and means that if you copy these patterns, or move them left/right, the associated [custom time signatures](#custom-time-signatures) will also be moved with them. Without the bar highlight, only the patterns are move and no tempo information is.
 
-> TODO : A mobile/desktop GIF here would be nice.
+=== "Desktop"
+    ![](images/SelectPatternsDesktop.gif#center)
+=== "Mobile"
+    ![](images/SelectPatternsMobile.gif#center)
 
 ## Copying & instancing patterns
 
@@ -128,7 +135,10 @@ To create an instance of an existing pattern, simply selected it and drag from t
 
 To create a completely separate copy of a pattern, a copy that will retain no connection to the original, simply drag from the **Colored Paperstack Icon** that appears and release it where you want to create the copy.
 
-> TODO : A mobile/desktop GIF here would be nice.
+=== "Desktop"
+    ![](images/InstanceCopyPatternsDesktop.gif#center)
+=== "Mobile"
+    ![](images/InstanceCopyPatternsMobile.gif#center)
 
 ## De-instancing patterns
 
@@ -151,4 +161,4 @@ Songs have a default time signature, which is usually the time signature that co
 
 To set a custom time signature for a given bar, right-click (long-press on mobile) on the bar number and select the **Edit Custom Time Signature...** option. If multiple bars are selected using the timeline selection mode, the changes will be applied to all selected bars.
 
-> TODO : Image here would be nice.
+![](images/CustomTimeSignature.gif#center)
