@@ -39,7 +39,7 @@ The main window is composed of a few main controls:
 
 * The **Pop-up Piano** is at the very bottom. This piano allows previewing the instrument associated with the **Active Channel**, which is the highlighted channel in the Sequencer. This piano can be toggled using the **Piano** button in the toolbar.
 
-#### TODO : Tablet screenshot + crop titlebar + write name of things on images.
+> TODO : Tablet screenshot + crop titlebar + write name of things on images.
 
 === "Desktop"
     ![](images/MainWindowDesktop.png#center)
