@@ -14,6 +14,7 @@ nav:
   - "Generators Reference": generators.md
   - "Troubleshooting": troubleshooting.md
   - "Acknowledgements & Licences": thanks.md
+  - "Demo Song SoundFonts": soundfonts.md
 - Change Log:
   - "All Version History": changelog.md
 extra_css:
